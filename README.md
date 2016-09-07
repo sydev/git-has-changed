@@ -27,6 +27,8 @@ npm test
 ```
 
 ##### Changelog
+  - 1.0.2
+    - fixed error handling
   - 1.0.1
     - fixed typo
   - 1.0

@@ -13,7 +13,7 @@
    */
   function hasChanged(options, callback) {
     let error         = null,
-      result          = null,
+      result          = false,
       defaultOptions  = {
         repo: process.cwd(),
         number: 1,
