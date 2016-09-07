@@ -25,7 +25,7 @@
     // If the given 'dir' parameter isn´t a git repository, return an error
     if (!isGit(options.repo)) {
       error = new Error('The given "dir" parameter isn´t a git repository');
-      return cb(error, result);
+      return callback(error, result);
     }
 
     gitLog(options, (err, commits) => {
