@@ -27,5 +27,7 @@ npm test
 ```
 
 ##### Changelog
+  - 1.0.1
+    - fixed typo
   - 1.0
     - Initial commit
