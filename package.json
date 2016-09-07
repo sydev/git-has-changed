@@ -1,0 +1,33 @@
+{
+  "name": "git-has-changed",
+  "version": "1.0.0",
+  "description": "Check whether a git repo has changed",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "keywords": [
+    "git",
+    "has",
+    "changed",
+    "repo",
+    "repository"
+  ],
+  "author": {
+    "email": "dominik.winter92@gmail.com",
+    "name": "Dominik Winter"
+  },
+  "license": "MIT",
+  "jshintConfig": {
+    "esnext": true
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "simple-git": "^1.48.0"
+  },
+  "dependencies": {
+    "gitlog": "^2.4.0",
+    "is-git-check": "^1.0.1",
+    "object-merge": "^2.5.1"
+  }
+}
