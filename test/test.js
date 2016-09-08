@@ -70,6 +70,7 @@
 
         gitHasChanged(options, (err, hasChanged) => {
           assert.equal(true, hasChanged);
+          delete options.after;
           done();
         });
 
@@ -83,13 +84,40 @@
 
         gitHasChanged(options, (err, hasChanged) => {
           assert.equal(false, hasChanged);
+          delete options.before;
           done();
         });
 
       });
     });
 
-    describe('by ')
+  });
+
+
+  // Synchronous
+  describe('git has changed synchronous', () => {
+
+    describe('all time', () => {
+      it('should be true', () => {
+        assert.equal(true, gitHasChanged(options));
+      });
+    });
+
+    describe('last week', () => {
+      it('should be true', () => {
+        options.after = '7 days ago';
+        assert.equal(true, gitHasChanged(options));
+        delete options.after;
+      });
+    });
+
+    describe('before last week', () => {
+      it('should be false', () => {
+        options.before = '7 days ago';
+        assert.equal(false, gitHasChanged(options));
+        delete options.before;
+      });
+    });
 
   });
 

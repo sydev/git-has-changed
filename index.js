@@ -1,9 +1,11 @@
 (function() {
   'use strict';
 
+
   const gitLog      = require('gitlog');
   const isGit       = require('is-git-check');
   const objectMerge = require('object-merge');
+  const Sync        = require('sync');
 
   /**
    * Checks if a git repository has changed
@@ -17,7 +19,8 @@
       defaultOptions  = {
         repo: process.cwd(),
         number: 1,
-        date: 'local'
+        date: 'local',
+        sync: false
       };
 
     options = objectMerge(defaultOptions, options);
@@ -28,13 +31,24 @@
       return callback(error, result);
     }
 
-    gitLog(options, (err, commits) => {
-      if (err) error = err;
-      result = (commits.length > 0);
 
-      callback(err, result);
-    });
+
+    if (!callback) {
+      let commits = gitLog(options);
+      result = (commits.length > 0);
+      return result;
+    } else {
+
+      gitLog(options, (err, commits) => {
+        if (err) error = err;
+        result = (commits.length > 0);
+
+        callback(error, result);
+      });
+    }
   }
+
+
 
   module.exports = exports = hasChanged;
 

@@ -17,6 +17,9 @@ let options = {
 gitHasChanged(options, (err, hasChanged) => {
   console.log(hasChanged); // true or false
 });
+
+// For synchronous call
+let hasChanged = gitHasChanged(options);
 ```
 
 For other possible options, please have a look at [gitlog](https://www.npmjs.com/package/gitlog).
@@ -27,6 +30,8 @@ npm test
 ```
 
 ##### Changelog
+  - 1.1.0
+    - added synchronous function call
   - 1.0.2
     - fixed error handling
   - 1.0.1
