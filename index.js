@@ -5,7 +5,6 @@
   const gitLog      = require('gitlog');
   const isGit       = require('is-git-check');
   const objectMerge = require('object-merge');
-  const Sync        = require('sync');
 
   /**
    * Checks if a git repository has changed

@@ -30,6 +30,8 @@ npm test
 ```
 
 ##### Changelog
+  - 1.1.1
+    - fixed unresolved dependencies
   - 1.1.0
     - added synchronous function call
   - 1.0.2
