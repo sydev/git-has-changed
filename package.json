@@ -22,12 +22,12 @@
     "esnext": true
   },
   "devDependencies": {
-    "mocha": "^3.0.2",
-    "simple-git": "^1.48.0"
+    "mocha": "^3.1.2",
+    "simple-git": "^1.62.0"
   },
   "dependencies": {
     "gitlog": "^2.4.0",
-    "is-git-check": "^1.0.1",
+    "is-git-check": "^1.1.0",
     "object-merge": "^2.5.1"
   }
 }
