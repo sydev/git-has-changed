@@ -29,5 +29,12 @@
     "gitlog": "^2.4.0",
     "is-git-check": "^1.1.0",
     "object-merge": "^2.5.1"
+  },
+  "resolutions": {
+    "mocha/**/debug": "^2.6.9",
+    "mocha/**/growl": "^1.10.2",
+    "mocha/**/minimist": "^0.2.1",
+    "gitlog/**/debug": "^2.6.9"
+
   }
 }
