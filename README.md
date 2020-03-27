@@ -30,6 +30,8 @@ npm test
 ```
 
 ##### Changelog
+  - 1.1.2
+    - Update dependencies
   - 1.1.1
     - fixed unresolved dependencies
   - 1.1.0
