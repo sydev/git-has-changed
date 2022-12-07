@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "mocha": "^3.1.2",
-    "simple-git": "^1.62.0"
+    "simple-git": "^3.15.0"
   },
   "dependencies": {
     "gitlog": "^2.4.0",
